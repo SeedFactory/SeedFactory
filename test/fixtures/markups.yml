@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  jobber: 1
+  distributor: 1
+  wholesale: 1
+  dealer: 1
+  retail: 9.99
+  online: 9.99
+
+two:
+  description: MyText
+  jobber: 1
+  distributor: 1
+  wholesale: 1
+  dealer: 1
+  retail: 9.99
+  online: 9.99

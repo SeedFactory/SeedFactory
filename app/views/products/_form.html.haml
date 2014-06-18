@@ -1,0 +1,41 @@
+= simple_form_for @product do |f|
+  = f.error_notification
+  = f.input :name
+  = f.association :item_class, hint: 'Recleaned Grains, Game Bird, etc.'
+  = f.association :product_type, hint: 'No Melt, Whole Corn Blends, etc.'
+  .row
+    .col-sm-3
+      = f.input :code_prefix
+    .col-sm-6
+      = f.input :code
+    .col-sm-3
+      = f.input :code_suffix
+  = f.input :upc, label: 'UPC'
+  = f.input :weight
+  = f.input :image_product, label: 'Product Image', hint: 'JPEG'
+  = f.input :image_product_original, label: 'Product Image Original', hint: 'full size RAW .nef file'
+  = f.input :image_hero, label: 'Finished Product Image'
+  = f.input :image_front_original, label: 'Front Label Master Artwork'
+  = f.input :image_front, label: 'Front Label Hero'
+  = f.input :image_back_original, label: 'Back Label Master Artwork'
+  = f.input :image_back, label: 'Back Label Hero'
+  = f.input :image_bottom_original, label: 'Bottom Label Master Artwork'
+  = f.input :image_bottom, label: 'Bottom Label Hero'
+  = f.input :tag_artwork, label: 'Tag Artwork', hint: 'File for producing tag with name, weight, barcode, etc.'
+  = f.input :overlabel_front_artwork, label: 'Overlabel Front Artwork', hint: 'File for completing front label. Product name, weight, etc.'
+  = f.input :overlabel_back_artwork, label: 'Tag Artwork', hint: 'File for completing back label. Descriptor, ingredients, etc.'
+
+  = f.input :items_per_case
+  = f.association :brand
+  = f.association :markup
+  = f.input :description
+  = f.association :pallet
+  = f.input :pallet_bag_count, label: 'bags per pallet'
+  = f.input :pallet_case_count, label: 'cases per pallet'
+  = f.input :pallet_size, label: 'Pallet Size'
+  = f.input :pallet_weight, label: 'Pallet Weight'
+  = f.input :gaylord, label: 'Gaylord Y/N'
+  = f.input :production_line, label: 'Production Line'
+  = f.input :screen_size_top, label: 'Top Screen Size'
+  = f.input :screen_size_bottom, label: 'Bottom Screen Size'
+  = f.button :submit

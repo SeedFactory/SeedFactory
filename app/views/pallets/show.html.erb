@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pallet.description %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @pallet.size %>
+</p>
+
+<%= link_to 'Edit', edit_pallet_path(@pallet) %> |
+<%= link_to 'Back', pallets_path %>

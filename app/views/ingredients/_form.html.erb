@@ -1,0 +1,93 @@
+<%= form_for(@ingredient) do |f| %>
+  <% if @ingredient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+
+      <ul>
+      <% @ingredient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :cwt %><br>
+    <%= f.number_field :cwt %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :protein %><br>
+    <%= f.text_field :protein %>
+  </div>
+  <div class="field">
+    <%= f.label :fat %><br>
+    <%= f.text_field :fat %>
+  </div>
+  <div class="field">
+    <%= f.label :fiber %><br>
+    <%= f.text_field :fiber %>
+  </div>
+  <div class="field">
+    <%= f.label :ash %><br>
+    <%= f.text_field :ash %>
+  </div>
+  <div class="field">
+    <%= f.label :calcium %><br>
+    <%= f.text_field :calcium %>
+  </div>
+  <div class="field">
+    <%= f.label :phosphorus %><br>
+    <%= f.text_field :phosphorus %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamin_a %><br>
+    <%= f.text_field :vitamin_a %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamin_d3 %><br>
+    <%= f.text_field :vitamin_d3 %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamin_e %><br>
+    <%= f.text_field :vitamin_e %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamin_k %><br>
+    <%= f.text_field :vitamin_k %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamin_b12 %><br>
+    <%= f.text_field :vitamin_b12 %>
+  </div>
+  <div class="field">
+    <%= f.label :riboflavin %><br>
+    <%= f.text_field :riboflavin %>
+  </div>
+  <div class="field">
+    <%= f.label :met_energy %><br>
+    <%= f.text_field :met_energy %>
+  </div>
+  <div class="field">
+    <%= f.label :panto %><br>
+    <%= f.text_field :panto %>
+  </div>
+  <div class="field">
+    <%= f.label :niacin %><br>
+    <%= f.text_field :niacin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

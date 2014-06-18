@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_prefix: MyString
+  code_suffix: MyString
+  code: 1
+  name: MyString
+  weight: 9.99
+  items_per_case: 1
+  type_id: 
+  category_id: 
+  markup_id: 
+  item_class_id: 
+  upc: 1
+  pallet_bag_count: 1
+  pallet_case_count: 1
+  pallet_size: MyString
+  pallet_weight: 9.99
+  gaylord: false
+  description: MyText
+  brand_id: 
+  production_line: 1
+  screen_size_top: MyString
+  screen_size_bottom: MyString
+  catalog_page: 1
+
+two:
+  code_prefix: MyString
+  code_suffix: MyString
+  code: 1
+  name: MyString
+  weight: 9.99
+  items_per_case: 1
+  type_id: 
+  category_id: 
+  markup_id: 
+  item_class_id: 
+  upc: 1
+  pallet_bag_count: 1
+  pallet_case_count: 1
+  pallet_size: MyString
+  pallet_weight: 9.99
+  gaylord: false
+  description: MyText
+  brand_id: 
+  production_line: 1
+  screen_size_top: MyString
+  screen_size_bottom: MyString
+  catalog_page: 1

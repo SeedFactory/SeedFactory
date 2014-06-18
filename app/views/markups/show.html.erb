@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @markup.description %>
+</p>
+
+<p>
+  <strong>Jobber:</strong>
+  <%= @markup.jobber %>
+</p>
+
+<p>
+  <strong>Distributor:</strong>
+  <%= @markup.distributor %>
+</p>
+
+<p>
+  <strong>Wholesale:</strong>
+  <%= @markup.wholesale %>
+</p>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @markup.dealer %>
+</p>
+
+<p>
+  <strong>Retail:</strong>
+  <%= @markup.retail %>
+</p>
+
+<p>
+  <strong>Online:</strong>
+  <%= @markup.online %>
+</p>
+
+<%= link_to 'Edit', edit_markup_path(@markup) %> |
+<%= link_to 'Back', markups_path %>

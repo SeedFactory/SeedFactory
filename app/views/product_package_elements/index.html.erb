@@ -1,0 +1,27 @@
+<h1>Listing product_package_elements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Package element</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @product_package_elements.each do |product_package_element| %>
+      <tr>
+        <td><%= product_package_element.product %></td>
+        <td><%= product_package_element.package_element %></td>
+        <td><%= link_to 'Show', product_package_element %></td>
+        <td><%= link_to 'Edit', edit_product_package_element_path(product_package_element) %></td>
+        <td><%= link_to 'Destroy', product_package_element, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product package element', new_product_package_element_path %>

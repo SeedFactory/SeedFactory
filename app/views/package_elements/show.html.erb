@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @package_element.name %>
+</p>
+
+<p>
+  <strong>Package element type:</strong>
+  <%= @package_element.package_element_type %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @package_element.number %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @package_element.size %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @package_element.cost %>
+</p>
+
+<%= link_to 'Edit', edit_package_element_path(@package_element) %> |
+<%= link_to 'Back', package_elements_path %>

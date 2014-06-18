@@ -1,0 +1,15 @@
+source 'https://rubygems.org'
+
+gem 'rails', '4.1.1'
+gem 'pry-rails'
+gem 'pg'
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'bootstrap-sass'
+gem 'haml'
+gem 'simple_form', '3.1.0.rc1'
+gem 'sass-rails', '~> 4.0.3'
+gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'spring', group: :development

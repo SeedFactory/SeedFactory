@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  package_element_type_id: 
+  number: MyString
+  size: MyString
+  cost: 9.99
+
+two:
+  name: MyString
+  package_element_type_id: 
+  number: MyString
+  size: MyString
+  cost: 9.99

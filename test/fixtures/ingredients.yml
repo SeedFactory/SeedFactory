@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  description: MyString
+  cwt: 1
+  cost: 9.99
+  protein: 9.99
+  fat: 9.99
+  fiber: 9.99
+  ash: 9.99
+  calcium: 9.99
+  phosphorus: 9.99
+  vitamin_a: 9.99
+  vitamin_d3: 9.99
+  vitamin_e: 9.99
+  vitamin_k: 9.99
+  vitamin_b12: 9.99
+  riboflavin: 9.99
+  met_energy: 9.99
+  panto: 9.99
+  niacin: 9.99
+
+two:
+  number: 1
+  description: MyString
+  cwt: 1
+  cost: 9.99
+  protein: 9.99
+  fat: 9.99
+  fiber: 9.99
+  ash: 9.99
+  calcium: 9.99
+  phosphorus: 9.99
+  vitamin_a: 9.99
+  vitamin_d3: 9.99
+  vitamin_e: 9.99
+  vitamin_k: 9.99
+  vitamin_b12: 9.99
+  riboflavin: 9.99
+  met_energy: 9.99
+  panto: 9.99
+  niacin: 9.99

@@ -1,0 +1,13 @@
+class CreatePackageElements < ActiveRecord::Migration
+  def change
+    create_table :package_elements do |t|
+      t.string :name, null: false
+      t.references :package_element_type, index: true, null: false
+      t.string :number, null: false
+      t.string :size, null: false
+      t.decimal :cost, null: false
+
+      t.timestamps
+    end
+  end
+end

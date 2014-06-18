@@ -1,0 +1,37 @@
+<h1>Listing markups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Jobber</th>
+      <th>Distributor</th>
+      <th>Wholesale</th>
+      <th>Dealer</th>
+      <th>Retail</th>
+      <th>Online</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @markups.each do |markup| %>
+      <tr>
+        <td><%= markup.description %></td>
+        <td><%= markup.jobber %></td>
+        <td><%= markup.distributor %></td>
+        <td><%= markup.wholesale %></td>
+        <td><%= markup.dealer %></td>
+        <td><%= markup.retail %></td>
+        <td><%= markup.online %></td>
+        <td><%= link_to 'Show', markup %></td>
+        <td><%= link_to 'Edit', edit_markup_path(markup) %></td>
+        <td><%= link_to 'Destroy', markup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Markup', new_markup_path %>
