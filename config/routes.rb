@@ -16,5 +16,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :ingredients
   resources :products
+
+  root to: 'static#index'
   
 end
