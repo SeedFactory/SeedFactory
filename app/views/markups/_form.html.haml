@@ -1,0 +1,18 @@
+= simple_form_for @markup do |f|
+  = f.error_notification
+  = f.input :description
+  .row
+    .col-sm-4
+      = f.input :jobber
+    .col-sm-4
+      = f.input :distributor
+    .col-sm-4
+      = f.input :wholesale
+  .row
+    .col-sm-4
+      = f.input :dealer
+    .col-sm-4
+      = f.input :retail
+    .col-sm-4
+      = f.input :online
+  = f.submit
