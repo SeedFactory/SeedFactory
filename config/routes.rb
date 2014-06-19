@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   resources :product_types
   resources :products
 
-  resource :user_session
+  get 'login' => 'user_sessions#new'
+  post 'login' => 'user_sessions#create'
+  get 'logout' => 'user_sessions#destroy'
 
   root to: 'static#index'
   
