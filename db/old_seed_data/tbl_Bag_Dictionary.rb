@@ -218,5 +218,5 @@ package_elements = [
 ]
 
 package_elements.each do |package_element|
-  PackageElement.create( :id => package_element[0], :number => package_element[2], :name => package_element[3], :size => package_element[4], :cost => package_element[5], :notes => package_element[6], :package_element_type => PackageElementType.find_by!(name:  package_element[7]) )
+  PackageElement.create( :id => package_element[0], :number => package_element[2], :name => package_element[3], :size => package_element[4], :cost => package_element[5], :notes => package_element[6], :package_element_type => PackageElementType.find_or_create_by(name:  package_element[8]) )
 end
