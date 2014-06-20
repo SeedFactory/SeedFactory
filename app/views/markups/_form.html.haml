@@ -1,6 +1,10 @@
 = simple_form_for @markup do |f|
   = f.error_notification
-  = f.input :description
+  .row
+    .col-sm-2
+      = f.input :markup_number
+    .col-sm-10
+      = f.input :description
   .row
     .col-sm-4
       = f.input :jobber

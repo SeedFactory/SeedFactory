@@ -7,3 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 product_types = ProductType.create([{ name: 'No Melt' }, { name: 'High Energy' }, { name: 'No Corn Blends' }, { name: 'Popcorn Blends' }, { name: 'Whole Corn Blends' }, { name: 'Premium Pigeon' }, { name: 'Premium Gamebird' }])
 item_classes = ItemClass.create([{ name: 'Single'}, { name: 'Farmers'}, { name: 'Best'}, { name: 'VP Ent'}, { name: 'VK Special'}, { name: 'Wildbird'}, { name: 'Suet'}, { name: 'Other'}, { name: 'JS West'}, { name: 'WB Inv'}, { name: 'Nekton'}, { name: 'Avian'}, { name: 'VK Prem'}, { name: 'Rogue'}, { name: 'wildb Ctm'}, { name: 'Premium'}, { name: 'Nutrena'}, { name: 'wildb Inv Ctm'}, { name: 'Associated'}, { name: 'Pigeon Ctm'}, { name: 'Pigeon'}, { name: 'Gameb Ctm'}, { name: 'Economy'}, { name: 'Game Bird'}, { name: 'Cage Bird'}, { name: 'Cage Ctm'}, { name: 'Sm Animal'}, { name: 'Feather'}, { name: 'Grit'}, { name: 'Natures'}, { name: 'Vk Sm Anim'}, { name: 'Bedding'}, { name: 'Vk Wild'}, { name: 'Petamine'}, { name: 'Eagle Mill'}, { name: 'SF Item'}])
+
+load "#{Rails.root}/db/seed_data/tbl_Markup_Dictionary.rb"
+load "#{Rails.root}/db/seed_data/tbl_Ingredients.rb"
+load "#{Rails.root}/db/seed_data/tbl_Formula_Ingredients.rb"
+load "#{Rails.root}/db/seed_data/tbl_Formula_Header.rb"
+load "#{Rails.root}/db/seed_data/tbl_Bag_Dictionary.rb"

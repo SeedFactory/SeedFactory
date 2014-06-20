@@ -6,7 +6,7 @@ class MarkupsController < ApplicationController
   private
 
   def permitted_params
-    [:description, :jobber, :distributor, :wholesale, :dealer, :retail, :online]
+    [:markup_number, :description, :jobber, :distributor, :wholesale, :dealer, :retail, :online]
   end
-  
+
 end
