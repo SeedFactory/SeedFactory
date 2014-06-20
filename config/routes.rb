@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :product_package_elements
   resources :product_types
   resources :products
+  resources :users
 
   get 'login' => 'user_sessions#new'
   post 'login' => 'user_sessions#create'
