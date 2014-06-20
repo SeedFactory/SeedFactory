@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140619164129) do
+ActiveRecord::Schema.define(version: 20140619231859) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,10 +33,10 @@ ActiveRecord::Schema.define(version: 20140619164129) do
   add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
 
   create_table "ingredients", force: true do |t|
-    t.integer  "number",      null: false
-    t.string   "description", null: false
-    t.integer  "cwt",         null: false
-    t.decimal  "cost",        null: false
+    t.integer  "number",        null: false
+    t.string   "description",   null: false
+    t.integer  "cwt",           null: false
+    t.decimal  "cost",          null: false
     t.decimal  "protein"
     t.decimal  "fat"
     t.decimal  "fiber"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20140619164129) do
     t.decimal  "niacin"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "ingredient_id"
   end
 
   create_table "item_classes", force: true do |t|
@@ -66,14 +67,15 @@ ActiveRecord::Schema.define(version: 20140619164129) do
 
   create_table "markups", force: true do |t|
     t.text     "description"
-    t.integer  "jobber",      null: false
-    t.integer  "distributor", null: false
-    t.integer  "wholesale",   null: false
-    t.integer  "dealer",      null: false
-    t.decimal  "retail",      null: false
-    t.decimal  "online",      null: false
+    t.decimal  "jobber",        default: 0.0, null: false
+    t.decimal  "distributor",   default: 0.0, null: false
+    t.decimal  "wholesale",     default: 0.0, null: false
+    t.decimal  "dealer",        default: 0.0, null: false
+    t.decimal  "retail",        default: 0.0, null: false
+    t.decimal  "online",        default: 0.0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "markup_number"
   end
 
   create_table "package_element_types", force: true do |t|
@@ -96,6 +98,8 @@ ActiveRecord::Schema.define(version: 20140619164129) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.text     "notes"
+    t.integer  "bag_id"
   end
 
   add_index "package_elements", ["package_element_type_id"], name: "index_package_elements_on_package_element_type_id", using: :btree
@@ -214,6 +218,8 @@ ActiveRecord::Schema.define(version: 20140619164129) do
     t.string   "overlabel_back_artwork_content_type"
     t.integer  "overlabel_back_artwork_file_size"
     t.datetime "overlabel_back_artwork_updated_at"
+    t.string   "formula_number"
+    t.integer  "bag_id"
   end
 
   add_index "products", ["brand_id"], name: "index_products_on_brand_id", using: :btree

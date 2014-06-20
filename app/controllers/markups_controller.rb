@@ -53,6 +53,6 @@ class MarkupsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def markup_params
-      params.require(:markup).permit(:description, :jobber, :distributor, :wholesale, :dealer, :retail, :online)
+      params.require(:markup).permit(:markup_number, :description, :jobber, :distributor, :wholesale, :dealer, :retail, :online)
     end
 end
