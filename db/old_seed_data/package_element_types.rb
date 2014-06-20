@@ -2,7 +2,9 @@ element_types = [
 	"Bag",
 	"Closure",
 	"Box",
-	"Carton"
+	"Carton",
+	"Label",
+	"Block"
 ]
 
 element_types.each do |name|
