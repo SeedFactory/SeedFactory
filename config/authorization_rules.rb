@@ -1,6 +1,6 @@
 authorization do
 
-  role :developer do
+  role :administrator do
     has_omnipotence
   end
 
