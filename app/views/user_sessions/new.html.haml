@@ -1,7 +1,7 @@
 .row
   .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
     %h1 Login
-    = simple_form_for @user_session, url: user_session_path do |f|
+    = simple_form_for @user_session, url: login_path do |f|
       = f.input :email
       = f.input :password
       = f.button :submit, 'Login', class: 'btn-primary'
