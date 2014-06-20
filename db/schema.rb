@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140619164129) do
   create_table "ingredients", force: true do |t|
     t.integer  "number",      null: false
     t.string   "description", null: false
-    t.integer  "cwt",         null: false
+    t.integer  "cwt"
     t.decimal  "cost",        null: false
     t.decimal  "protein"
     t.decimal  "fat"
@@ -86,7 +86,7 @@ ActiveRecord::Schema.define(version: 20140619164129) do
   add_index "package_element_types", ["name"], name: "index_package_element_types_on_name", using: :btree
 
   create_table "package_elements", force: true do |t|
-    t.string   "name",                    null: false
+    t.string   "name"
     t.integer  "package_element_type_id", null: false
     t.string   "number",                  null: false
     t.string   "size",                    null: false
@@ -145,14 +145,14 @@ ActiveRecord::Schema.define(version: 20140619164129) do
   create_table "products", force: true do |t|
     t.string   "code_prefix"
     t.string   "code_suffix"
-    t.integer  "code",                                 null: false
+    t.integer  "code"
     t.string   "name",                                 null: false
-    t.decimal  "weight",                               null: false
+    t.decimal  "weight"
     t.integer  "items_per_case"
     t.integer  "product_type_id"
-    t.integer  "category_id",                          null: false
-    t.integer  "markup_id",                            null: false
-    t.integer  "item_class_id",                        null: false
+    t.integer  "category_id"
+    t.integer  "markup_id"
+    t.integer  "item_class_id"
     t.integer  "upc"
     t.integer  "pallet_bag_count"
     t.integer  "pallet_case_count"

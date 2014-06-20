@@ -23,6 +23,6 @@ class Product < ActiveRecord::Base
   has_attached_file :overlabel_front_artwork
   has_attached_file :overlabel_back_artwork
 
-  validates_presence_of :code, :name, :weight, :category, :markup, :item_class
+  validates_presence_of :name
 
 end

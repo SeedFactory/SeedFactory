@@ -3,7 +3,7 @@ class CreateIngredients < ActiveRecord::Migration
     create_table :ingredients do |t|
       t.integer :number, null: false
       t.string :description, null: false
-      t.integer :cwt, null: false
+      t.integer :cwt
       t.decimal :cost, null: false
       t.decimal :protein
       t.decimal :fat

@@ -1,4 +1,4 @@
-id,company_id,number,notes,size,cost,notes,updated_at,package_element_type_name
+id,company_id,number,name,size,cost,notes,updated_at,package_element_type_name
 1,1,5.00,"POLY 24 X 40",100.00,0.40,,,Bag
 2,1,10.00,"POLY 24 X 40",80.00,0.38,,,Bag
 3,1,15.00,"POLY 24 X 40",75.00,0.38,,,Bag

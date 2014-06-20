@@ -7,6 +7,6 @@ class PackageElement < ActiveRecord::Base
 
   has_attached_file :image
 
-  validates_presence_of :package_element_type, :name, :number, :size, :cost
+  validates_presence_of :package_element_type, :number, :size, :cost
 
 end

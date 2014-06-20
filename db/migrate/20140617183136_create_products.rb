@@ -3,14 +3,14 @@ class CreateProducts < ActiveRecord::Migration
     create_table :products do |t|
       t.string :code_prefix
       t.string :code_suffix
-      t.integer :code, null: false
+      t.integer :code
       t.string :name, null: false
-      t.decimal :weight, null: false
+      t.decimal :weight
       t.integer :items_per_case
       t.references :product_type, index: true
-      t.references :category, index: true, null: false
-      t.references :markup, index: true, null: false
-      t.references :item_class, index: true, null: false
+      t.references :category, index: true
+      t.references :markup, index: true
+      t.references :item_class, index: true
       t.integer :upc
       t.integer :pallet_bag_count
       t.integer :pallet_case_count
