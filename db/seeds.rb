@@ -1,15 +1,24 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-product_types = ProductType.create([{ name: 'No Melt' }, { name: 'High Energy' }, { name: 'No Corn Blends' }, { name: 'Popcorn Blends' }, { name: 'Whole Corn Blends' }, { name: 'Premium Pigeon' }, { name: 'Premium Gamebird' }])
-item_classes = ItemClass.create([{ name: 'Single'}, { name: 'Farmers'}, { name: 'Best'}, { name: 'VP Ent'}, { name: 'VK Special'}, { name: 'Wildbird'}, { name: 'Suet'}, { name: 'Other'}, { name: 'JS West'}, { name: 'WB Inv'}, { name: 'Nekton'}, { name: 'Avian'}, { name: 'VK Prem'}, { name: 'Rogue'}, { name: 'wildb Ctm'}, { name: 'Premium'}, { name: 'Nutrena'}, { name: 'wildb Inv Ctm'}, { name: 'Associated'}, { name: 'Pigeon Ctm'}, { name: 'Pigeon'}, { name: 'Gameb Ctm'}, { name: 'Economy'}, { name: 'Game Bird'}, { name: 'Cage Bird'}, { name: 'Cage Ctm'}, { name: 'Sm Animal'}, { name: 'Feather'}, { name: 'Grit'}, { name: 'Natures'}, { name: 'Vk Sm Anim'}, { name: 'Bedding'}, { name: 'Vk Wild'}, { name: 'Petamine'}, { name: 'Eagle Mill'}, { name: 'SF Item'}])
+require 'csv'
+require 'ansi'
 
-load "#{Rails.root}/db/seed_data/tbl_Markup_Dictionary.rb"
-load "#{Rails.root}/db/seed_data/tbl_Ingredients.rb"
-load "#{Rails.root}/db/seed_data/tbl_Formula_Ingredients.rb"
-load "#{Rails.root}/db/seed_data/tbl_Formula_Header.rb"
-load "#{Rails.root}/db/seed_data/tbl_Bag_Dictionary.rb"
+def csv name, &block
+  rows = CSV.table("#{Rails.root}/db/seed_data/#{name}.csv")
+  progress = ANSI::ProgressBar.new(name, rows.length)
+  rows.each do |row|
+    progress.inc
+    block.call(row.to_hash)
+  end
+  progress.finish
+end
+
+csv('product_types') do |row|
+  ProductType.create(row)
+end
+
+csv('item_classes') do |row|
+  ItemClass.create(row)
+end
+
+csv('package_element_types') do |row|
+  PackageElementType.create(row)
+end

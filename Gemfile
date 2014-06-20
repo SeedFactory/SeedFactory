@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'ansi'
 gem 'authlogic'
 gem 'aws-sdk'
 gem 'bcrypt'
