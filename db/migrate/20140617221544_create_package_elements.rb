@@ -6,6 +6,7 @@ class CreatePackageElements < ActiveRecord::Migration
       t.string :number, null: false
       t.string :size, null: false
       t.decimal :cost, null: false
+      t.text :notes
 
       t.timestamps
     end

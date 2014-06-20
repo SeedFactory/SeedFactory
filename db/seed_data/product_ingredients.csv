@@ -1,4 +1,4 @@
-"FORMULA_ID","INGREDIENT_ID","AMOUNT_OF_INGREDIENT"
+product_id,ingredient_id,amount
 13,613,1996
 18,709,2000
 22,608,1996

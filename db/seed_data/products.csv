@@ -1,4 +1,4 @@
-"FORMULA_ID","COMPANY_ID","FORMULA_NUMBER","DESCRIPTION","BAG_ID","MARKUP_ID","DISTRIB1 MARKUP","DISTRIB2 MARKUP","RETAIL LIST MARKUP","NOTES"
+id,company_id,formula_number,description,bag_id,markup_id,distrib1_markup,distrib2_markup,retail_list_markup,notes
 5,1,"9-10050","BUCKWHEAT   50#",8,8,15,20,25,"Hi Country"
 13,1,"9-11050","CANARY SEED 50#",22,6,10,50,,
 14,1,"9-11402","CRACKED CORN  (WILD BIRD) 6/4#",270,14,,,,

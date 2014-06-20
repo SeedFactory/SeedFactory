@@ -8,6 +8,7 @@ class CreateMarkups < ActiveRecord::Migration
       t.integer :dealer, null: false
       t.decimal :retail, null: false
       t.decimal :online, null: false
+      t.integer :number, null: false
 
       t.timestamps
     end

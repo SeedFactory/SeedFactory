@@ -23,6 +23,8 @@ class CreateProducts < ActiveRecord::Migration
       t.string :screen_size_top
       t.string :screen_size_bottom
       t.integer :catalog_page
+      t.string :formula_number
+      t.text :notes
       t.references :pallet, index: true
 
       t.timestamps

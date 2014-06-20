@@ -1,4 +1,4 @@
-"INGREDIENT_ID","COMPANY_ID","INGREDIENT_NUMBER","INGREDIENT_DESCRIPTION","CWT","INGREDIENT_COST","PROTEIN","FAT","FIBER","ASH","CALCIUM","PHOSPHOURS","VITA_A","VITA_D3","VITA_E","VITA_K","VITA_B12","RIBO","MET_ENERGY","PANTO","NIACIN"
+id,company_id,number,description,cwt,cost,protein,fat,fiber,ash,calcium,phosphorus,vitamin_a,vitamin_d3,vitamin_e,vitamin_k,vitamin_b12,riboflavin,met_energy,panto,niacin
 580,1,1002,"ALFALFA CUBES","100",21.20,16.00,,,,,,,,,,,,,,
 581,1,1417,"NUTS, ALMOND IN-SHELL","100",135.00,,,,,,,,,,,,,,,
 582,1,1010,"ALLSPICE, WHOLE","100",295.00,,,,,,,,,,,,,,,
