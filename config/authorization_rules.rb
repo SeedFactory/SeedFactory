@@ -3,6 +3,9 @@ authorization do
   role :administrator do
     has_omnipotence
   end
+  role :guest do
+    has_permission_on :products, to: [:index]
+  end
 
 end
 

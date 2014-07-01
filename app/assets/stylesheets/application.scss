@@ -1,0 +1,39 @@
+@import "bootstrap";
+
+body {
+  margin-top: 30px;
+}
+
+.navbar,
+.navbar-default,
+.navbar-fixed-top {
+	min-height: 30px;
+	height: 30px;
+    background: #C4C4C4;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 30px;
+    height: 30px;
+    padding-top: 0;
+}
+
+.carousel-caption {
+	text-shadow: 1px 1px 3px rgba(0,0,0,1);
+    .darken-background {
+    	background-color:rgba(0,0,0,0.6);
+    	box-shadow:0px 0px 60px 60px rgba(0,0,0,0.6);
+		border-radius:40px 40px 40px 40px ;
+    }
+}
+
+.carousel.carousel-fade .item {
+  opacity:0;
+  filter: alpha(opacity=0); /* ie fix */
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+    filter: alpha(opacity=100); /* ie fix */
+}

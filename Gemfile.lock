@@ -33,6 +33,8 @@ GEM
       activerecord (>= 3.2)
       activesupport (>= 3.2)
       request_store (~> 1.0)
+    autoprefixer-rails (2.0.1.20140626)
+      execjs
     aws-sdk (1.28.1)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
@@ -90,6 +92,7 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    railroady (1.1.1)
     rails (4.1.1)
       actionmailer (= 4.1.1)
       actionpack (= 4.1.1)
@@ -148,6 +151,7 @@ PLATFORMS
 DEPENDENCIES
   ansi
   authlogic
+  autoprefixer-rails
   aws-sdk
   bcrypt
   bootstrap-sass
@@ -157,6 +161,7 @@ DEPENDENCIES
   paperclip
   pg
   pry-rails
+  railroady
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   simple_form (= 3.1.0.rc1)

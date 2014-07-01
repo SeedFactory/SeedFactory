@@ -22,6 +22,9 @@ end
 csv('item_classes') do |row|
   ItemClass.create!(row)
 end
+csv('categories') do |row|
+  Category.create!(row)
+end
 
 csv('package_element_types') do |row|
   PackageElementType.create!(row)
@@ -59,3 +62,6 @@ csv('products') do |row|
   row[:package_elements] = PackageElement.where(id: row.delete(:bag_id))
   Product.create!(row)  
 end
+
+role=Role.create(name: 'administrator')
+user=User.create(email: 'randy.schack@gmail.com', password: 'Spencer18', password_confirmation: 'Spencer18', first_name: 'Randy', last_name: 'Schack', roles: [Role.find_by(name: 'administrator')])
