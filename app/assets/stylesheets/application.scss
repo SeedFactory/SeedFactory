@@ -37,3 +37,12 @@ body {
     opacity:1;
     filter: alpha(opacity=100); /* ie fix */
 }
+
+.custom-buttons
+{
+  @extend .btn;
+  @extend .btn-default;
+  @extend .navbar-btn;
+  padding: 6px 12px !important;
+  line-height: 1.428571429 !important;
+}

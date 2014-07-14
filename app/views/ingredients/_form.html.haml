@@ -1,49 +1,46 @@
 = simple_form_for @ingredient do |f|
   = f.error_notification
-  = f.input :description
   .row
-    .col-sm-3
+    .col-sm-12
+      = f.input :description
+  .row
+    .col-sm-2
       = f.input :number    
-    .col-sm-3
-      = f.input :number
-    .col-sm-3
+    .col-sm-2
       = f.input :cost
-    .col-sm-3
+    .col-sm-2
       = f.input :cwt
-  .row
-    .col-sm-4
+    .col-sm-2
       = f.input :protein
-    .col-sm-4
+    .col-sm-2
       = f.input :fat
-    .col-sm-4
+    .col-sm-2
       = f.input :fiber
   .row
-    .col-sm-4
+    .col-sm-2
       = f.input :ash
-    .col-sm-4
+    .col-sm-2
       = f.input :calcium
-    .col-sm-4
+    .col-sm-2
       = f.input :phosphorus
-  .row
-    .col-sm-4
+    .col-sm-2
       = f.input :vitamin_a
-    .col-sm-4
+    .col-sm-2
       = f.input :vitamin_d3
-    .col-sm-4
+    .col-sm-2
       = f.input :vitamin_e
   .row
-    .col-sm-4
+    .col-sm-2
       = f.input :vitamin_k
-    .col-sm-4
+    .col-sm-2
       = f.input :vitamin_b12
-    .col-sm-4
+    .col-sm-2
       = f.input :riboflavin
-  .row
-    .col-sm-4
+    .col-sm-2
       = f.input :met_energy
-    .col-sm-4
+    .col-sm-2
       = f.input :panto
-    .col-sm-4
+    .col-sm-2
       = f.input :niacin
   .row
     .col-sm-12

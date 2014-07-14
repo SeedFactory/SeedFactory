@@ -1,111 +1,210 @@
 <p id="notice"><%= notice %></p>
 
+<h1>View Ingredient</h1>
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-xs-12 col-sm-12 col-md-12">
     <p>
-    <strong>Number:</strong>
-    <%= @ingredient.number %>
-    </p> 
-  </div>
-  <div class="col-md-6">
-    <p>
-    <strong>Description:</strong>
-    <%= @ingredient.description %>
-    </p>
-  </div>
-  <div class="col-md-2">
-    <p>
-    <strong>Cost:</strong>
-    <%= @ingredient.cost %>
+    <strong>Description:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.description %>
+        </div>
+      </div>
     </p>
   </div>
 </div>
-
-
-
-
-<p>
-  <strong>Cwt:</strong>
-  <%= @ingredient.cwt %>
-</p>
-
-
-
-<p>
-  <strong>Protein:</strong>
-  <%= @ingredient.protein %>
-</p>
-
-<p>
-  <strong>Fat:</strong>
-  <%= @ingredient.fat %>
-</p>
-
-<p>
-  <strong>Fiber:</strong>
-  <%= @ingredient.fiber %>
-</p>
-
-<p>
-  <strong>Ash:</strong>
-  <%= @ingredient.ash %>
-</p>
-
-<p>
-  <strong>Calcium:</strong>
-  <%= @ingredient.calcium %>
-</p>
-
-<p>
-  <strong>Phosphorus:</strong>
-  <%= @ingredient.phosphorus %>
-</p>
-
-<p>
-  <strong>Vitamin a:</strong>
-  <%= @ingredient.vitamin_a %>
-</p>
-
-<p>
-  <strong>Vitamin d3:</strong>
-  <%= @ingredient.vitamin_d3 %>
-</p>
-
-<p>
-  <strong>Vitamin e:</strong>
-  <%= @ingredient.vitamin_e %>
-</p>
-
-<p>
-  <strong>Vitamin k:</strong>
-  <%= @ingredient.vitamin_k %>
-</p>
-
-<p>
-  <strong>Vitamin b12:</strong>
-  <%= @ingredient.vitamin_b12 %>
-</p>
-
-<p>
-  <strong>Riboflavin:</strong>
-  <%= @ingredient.riboflavin %>
-</p>
-
-<p>
-  <strong>Met energy:</strong>
-  <%= @ingredient.met_energy %>
-</p>
-
-<p>
-  <strong>Panto:</strong>
-  <%= @ingredient.panto %>
-</p>
-
-<p>
-  <strong>Niacin:</strong>
-  <%= @ingredient.niacin %>
-</p>
-
-<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
-<%= link_to 'Back', ingredients_path %>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+    <strong>Number:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.number %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+    <strong>Cost:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.cost %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+    <strong>Cwt:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.cwt %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Protein:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.protein %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Fat:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.fat %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Fiber:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.fiber %>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Ash:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.ash %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Calcium:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.calcium %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Phosphorus:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.phosphorus %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Vitamin A:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.vitamin_a %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+     <p>
+      <strong>Vitamin D3:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.vitamin_d3 %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Vitamin E:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.vitamin_e %>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Vitamin K:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.vitamin_k %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Vitamin B12:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.vitamin_b12 %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong>Riboflavin:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.riboflavin %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+    <strong>Met energy:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.met_energy %>
+        </div>
+      </div>
+  </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+  <p>
+    <strong>Panto:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.panto %>
+      </div>
+    </div>
+  </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+  <p>
+    <strong>Niacin:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @ingredient.niacin %>
+      </div>
+    </div>
+  </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <%= link_to 'Edit', edit_ingredient_path(@ingredient), :class=> "custom-buttons" %>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <%= link_to 'Back', ingredients_path, :class=> "custom-buttons" %>
+  </div>
+</div>

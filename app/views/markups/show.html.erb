@@ -1,6 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+
+
+.row
+    .col-sm-2
+      = f.input :id
+    .col-sm-10
+      = f.input :description
+  .row
+    .col-sm-4
+      = f.input :jobber
+    .col-sm-4
+      = f.input :distributor
+    .col-sm-4
+      = f.input :wholesale
+  .row
+    .col-sm-4
+      = f.input :dealer
+    .col-sm-4
+      = f.input :retail
+    .col-sm-4
+      = f.input :online
+
+      <p>
   <strong>Markup Number:</strong>
   <%= @markup.id %>
 </p>
