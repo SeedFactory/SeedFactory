@@ -25,4 +25,8 @@ class Product < ActiveRecord::Base
 
   validates_presence_of :name
 
+  def code_concat
+    [code_prefix, code, code_suffix].reject(&:blank?).join('-')
+  end
+
 end
