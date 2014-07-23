@@ -1,109 +1,229 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Code prefix:</strong>
-  <%= @product.code_prefix %>
-</p>
-
-<p>
-  <strong>Code suffix:</strong>
-  <%= @product.code_suffix %>
-</p>
-
-<p>
-  <strong>Code:</strong>
-  <%= @product.code %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Weight:</strong>
-  <%= @product.weight %>
-</p>
-
-<p>
-  <strong>Items per case:</strong>
-  <%= @product.items_per_case %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @product.category %>
-</p>
-
-<p>
-  <strong>Markup:</strong>
-  <%= @product.markup %>
-</p>
-
-<p>
-  <strong>Item class:</strong>
-  <%= @product.item_class %>
-</p>
-
-<p>
-  <strong>Upc:</strong>
-  <%= @product.upc %>
-</p>
-
-<p>
-  <strong>Pallet bag count:</strong>
-  <%= @product.pallet_bag_count %>
-</p>
-
-<p>
-  <strong>Pallet case count:</strong>
-  <%= @product.pallet_case_count %>
-</p>
-
-<p>
-  <strong>Pallet size:</strong>
-  <%= @product.pallet_size %>
-</p>
-
-<p>
-  <strong>Pallet weight:</strong>
-  <%= @product.pallet_weight %>
-</p>
-
-<p>
-  <strong>Gaylord:</strong>
-  <%= @product.gaylord %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Brand:</strong>
-  <%= @product.brand %>
-</p>
-
-<p>
-  <strong>Production line:</strong>
-  <%= @product.production_line %>
-</p>
-
-<p>
-  <strong>Screen size top:</strong>
-  <%= @product.screen_size_top %>
-</p>
-
-<p>
-  <strong>Screen size bottom:</strong>
-  <%= @product.screen_size_bottom %>
-</p>
-
-<p>
-  <strong>Catalog page:</strong>
-  <%= @product.catalog_page %>
-</p>
+<div class="row">
+  <div class="col-xs-3 col-sm-2 col-md-1">
+    <p>
+    <strong>Code:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.code_prefix %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <p>
+      <strong></strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.code %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-3 col-sm-2 col-md-1">
+    <p>
+    <strong></strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.code_suffix %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-4">
+    <p>
+      <strong>UPC:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.upc %>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-5 col-sm-5 col-md-5">
+    <p>
+      <strong>Name:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.name %>
+        </div>
+      </div>
+    </p>
+  </div>
+   <div class="col-xs-5 col-sm-5 col-md-5">
+    <p>
+      <strong>Brand:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.brand %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-12 col-sm-2 col-md-2">
+    <p>
+      <strong>Weight:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.weight %>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <p>
+    <strong>Description:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.description %>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-4">
+    <p>
+    <strong>Item Class:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.item_class %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-4">
+    <p>
+    <strong>Category:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.category %>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-4">
+    <p>
+    <strong>Markup:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.markup %>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <p>
+    <strong>Items per case:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.items_per_case %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <p>
+    <strong>Pallet bag count:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.pallet_bag_count %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <p>
+    <strong>Pallet Case Count:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.pallet_case_count %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <p>
+    <strong>Pallet Size:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.pallet_size %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <p>
+    <strong>Pallet Weight:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.pallet_weight %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <p>
+    <strong>Gaylord:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.gaylord %>
+        </div>
+      </div>
+    </p> 
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-md-3">
+    <p>
+    <strong>Production Line:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.production_line %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-3 col-sm-3 col-md-3">
+    <p>
+    <strong>Screen size top:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.screen_size_top %>
+        </div>
+      </div>
+    </p> 
+  </div>
+  <div class="col-xs-3 col-sm-3 col-md-3">
+    <p>
+    <strong>Screen size bottom:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.screen_size_bottom %>
+        </div>
+      </div>
+    </p> 
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-md-3">
+    <p>
+    <strong>Catalog page:</strong><br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @product.catalog_page %>
+        </div>
+      </div>
+    </p> 
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
