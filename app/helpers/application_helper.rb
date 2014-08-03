@@ -14,4 +14,13 @@ module ApplicationHelper
     end
   end
 
+  def filter_tag model
+    name = model.model_name
+    param_key = "#{name.param_key}_id"
+    select_tag param_key,
+      options_from_collection_for_select(model.all, :id, :name, params[param_key]),
+      prompt: name.human,
+      data: { filter: true }
+  end
+
 end

@@ -64,7 +64,7 @@ module ResourcefulController
   end
 
   def collection
-    controller_model.all
+    controller_model.where(params.slice(*filters))
   end
 
   def controller_model
