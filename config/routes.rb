@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   post 'login' => 'user_sessions#create'
   get 'logout' => 'user_sessions#destroy'
 
+  get 'contact' => 'static#contact'
+
   root to: 'static#index'
   
 end

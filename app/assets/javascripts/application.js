@@ -18,3 +18,15 @@
 //= require bootstrap/carousel
 //= require bootstrap/transition
 //= require_tree .
+
+$(function() {
+
+  var selects = $('select[data-filter="true"]');
+
+  selects.on('change', function() {
+    location.search = selects.filter(function() {
+      return $(this).val();
+    }).serialize();
+  });
+
+});

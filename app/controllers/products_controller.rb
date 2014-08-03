@@ -5,6 +5,10 @@ class ProductsController < ApplicationController
   
   private
 
+  def filters
+    [:category_id, :item_class_id, :brand_id]
+  end
+
   def permitted_params
     [
       :code_prefix, 
