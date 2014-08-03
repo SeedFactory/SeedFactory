@@ -1,0 +1,14 @@
+sqlite> .mode csv
+sqlite> .output combined_csv.csv
+sqlite> SELECT id,company_id,formula_number,product_number,name,bag_id,markup_id,distrib1_markup,distrib2_markup,retail_list_markup,notes
+   ...> FROM products
+   ...> LEFT OUTER JOIN product_data
+   ...> ON products.product_number=product_data.item_number;
+
+
+sqlite> .mode csv
+sqlite> .output combined_reverse.csv
+sqlite> SELECT code_prefix,item_number,code_suffix,product_type_name,product,size,category,item_description,item_class_code,jpeg,raw_image
+   ...> FROM product_data
+   ...> LEFT OUTER JOIN products
+   ...> ON products.product_number=product_data.item_number;

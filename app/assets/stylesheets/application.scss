@@ -1,10 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 $navbar-height: 30px;
 $navbar-default-bg: #C4C4C4;
+$font-family-sans-serif:"Montserrat";
 
 @import "bootstrap";
 
 body {
   margin-top: $navbar-height;
+}
+
+.anchor {
+	position: relative;
+	top: -$navbar-height;
+	display: block;
+}
+
+.carousel {
+	margin-bottom: 60px;
 }
 
 .carousel-caption {
