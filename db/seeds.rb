@@ -63,5 +63,8 @@ csv('products') do |row|
   Product.create!(row)  
 end
 
-role=Role.create(name: 'administrator')
+csv('roles') do |row|
+  Role.create!(row)
+end
+
 user=User.create(email: 'randy.schack@gmail.com', password: 'Spencer18', password_confirmation: 'Spencer18', first_name: 'Randy', last_name: 'Schack', roles: [Role.find_by(name: 'administrator')])
