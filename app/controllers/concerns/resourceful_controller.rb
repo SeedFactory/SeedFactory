@@ -58,6 +58,10 @@ module ResourcefulController
     []
   end
 
+  def filters
+    []
+  end
+
   def set_resource record = nil
     record ||= controller_model.find(params[:id])
     instance_variable_set("@#{resource_name}", record)
